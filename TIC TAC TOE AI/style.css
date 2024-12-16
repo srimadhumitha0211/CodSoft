@@ -1,0 +1,70 @@
+body {
+    font-family: "Sour Gummy", sans-serif;
+    text-align: center;
+    background-image: linear-gradient( to right, rgba(39, 251, 255, 0.49),rgb(0, 0, 0));
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient( to right, rgba(48, 48, 48, 0.49),rgb(0, 0, 0));
+    border: 2px solid #000;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell.taken {
+    pointer-events: none;
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: "Sour Gummy";
+    background-image: linear-gradient( to right, rgba(51, 51, 51, 0.49),rgb(0, 0, 0));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#difficulty{
+    background-color:  rgba(39, 251, 255, 0.49);
+    font-family: "Sour Gummy";
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
